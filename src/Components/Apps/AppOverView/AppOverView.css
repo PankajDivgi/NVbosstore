@@ -1,0 +1,164 @@
+.bg-mob-slide{
+    min-height: 100vh;
+    /* background-image: url('../../../Images/BgMob.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MobBg{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.MobBs{
+    width: 195px;
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+}
+.tabs-ver {
+    height: 100vh;
+}
+.tabs-ver .ant-tabs-nav>div{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tabs-ver .ant-tabs-content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.tabs-ver .ant-tabs-tab{
+    height: 100vh;
+    padding: 8px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    writing-mode: tb-rl;
+}
+.tabs-ver .ant-tabs-tab:hover{
+    color: #000;
+}
+.tabs-ver .ant-tabs-tab{
+    color: #C4C4C4;
+}
+.tabs-ver .ant-tabs-tab-active{
+    color: #000;
+}
+.tabs-ver .ant-tabs-ink-bar{
+    background-color: #000;
+}
+.pick-color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin: 4px;
+    cursor: pointer;
+}
+.pick-color>i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.pick-color:nth-child(1){
+    background-color: #F94C5A;
+}
+.pick-color:nth-child(2){
+    background-color: #A62661;
+}
+.pick-color:nth-child(3){
+    background-color: #292929;
+}
+.pick-color:nth-child(4){
+    background-color: #34495E;
+}
+.add-quntity{
+    background-color: #F9F9F9;
+    font-size: 20px;
+    margin: 4px;
+    border-radius: 28px;
+    padding: 10px 6px;
+    border: 1px solid #dcdcdc;
+}
+.add-minus{
+    padding: 0 16px 0 8px;
+    cursor: pointer;
+}
+.add-pluse{
+    padding: 0 8px 0 16px;
+    cursor: pointer;    
+}
+.add-carte{
+    padding: 10px 20px;
+    background-color: #212121;
+    font-size: 20px;
+    margin: 4px;
+    border-radius: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+.anim-to-bottom{
+    animation: moveToBottom 1s forwards;
+}
+.anim-to-top{
+    animation: moveToTop 1s forwards;
+}
+.tabs-ver .ant-tabs-tabpane-active{
+    animation: moveToBottom 1s forwards;
+}
+@keyframes moveToBottom {
+    from {transform: translate3d(0px, -800px, 0px);}
+    to {transform: translate3d(0px, 0px, 0px);}
+}
+@keyframes moveToTop {
+    from {transform: translate3d(0px, 800px, 0px);}
+    to {transform: translate3d(0px, 0px, 0px);}
+}
+
+.app-divided-a{
+    position: relative;
+    flex: 1 1 40%;
+}
+.app-divided-b{
+    flex: 1 1 60%;
+}
+
+
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
+    .MobBg{
+        width: 460px;
+    }
+    .MobBs{
+        width: 300px;
+    }
+    .tabs-ver .ant-tabs-nav>div{
+        width: 70px;
+    }
+    .tabs-ver .ant-tabs-content{
+        /* width: 80%; */
+        padding-right: 14%;
+    }
+    /* .tabs-ver .ant-tabs-bar{
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    } */
+}

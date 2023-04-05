@@ -1,0 +1,37 @@
+body{
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Montserrat', sans-serif !important;
+}
+.MuiTypography-body1 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+:disabled{
+    cursor: not-allowed;
+}
+a {
+    color: #000 !important;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.btn-bos{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.btn-bos:hover{
+  background-color: #0d0d0d !important;
+  color: #f2f2f2 !important;
+}
+.btn-bos-w{
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #000;
+}
+.btn-bos-w:hover{
+  background-color: #f2f2f2 !important;
+  color: #0d0d0d !important;
+}
+.ant-message{
+  z-index: 1301 !important;
+}
